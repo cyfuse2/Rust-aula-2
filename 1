@@ -1,0 +1,15 @@
+struct Pessoa {
+    nome: String,
+    idade: u32,
+    altura: f32,
+}
+
+fn main() {
+    let pessoa = Pessoa {
+        nome: String::from("Ana"),
+        idade: 28,
+        altura: 1.65,
+    };
+
+    println!("Nome: {}, Idade: {}, Altura: {}", pessoa.nome, pessoa.idade, pessoa.altura);
+}
