@@ -1,0 +1,6 @@
+fn main(){
+    let mut x = 10;  // Tornando `x` mutável
+    let y = &mut x;  // Criando uma referência mutável para `x`
+    *y += 1;         // Modificando o valor de `x` através de `y`
+    println!("{}", x); // Imprimindo o valor de `x` diretamente
+}
