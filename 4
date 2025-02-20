@@ -1,0 +1,31 @@
+use std::collections::VecDeque;
+
+fn main(){
+    //Criando uma fila usando VecDeque
+    let mut fila: VecDeque<&str> = VecDeque::new();
+    
+    //Adicionando elementos à fila (enfileirando)
+    fila.push_back("João");
+    fila.push_back("Maria");
+    fila.push_back("Carlos");
+    
+    //Exibindo a fila
+    println!("Fila inicial:{:?}",fila);
+    
+    //Removendo elementos da fila (desenfileirando)
+    let primeiro = fila.pop_front();
+    println!("Primeiro da fila: {:?}", primeiro);
+    println!("Fila após remoção: {:?}", fila);
+    
+    //Adicionando mais elementos
+    fila.push_back("Ana");
+    fila.push_back("Lucas");
+    
+    //Exibindo a fila após mais inserções 
+    println!("Fila após mais inserções:{:?}", fila);
+    
+    //Removendo mais um elemento
+    let segundo = fila.pop_front();
+    println!("Segundo da fila:{:?}", segundo);
+    println!("Fila final:{:?}", fila);
+}
