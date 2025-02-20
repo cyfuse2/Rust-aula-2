@@ -1,0 +1,22 @@
+fn main(){
+    let mut pilha: Vec<&str> = Vec::new();
+    pilha.push("João");
+    pilha.push("Maria");
+    pilha.push("Carlos");
+    
+    println!("Pilha inicial: {:?}",pilha);
+    
+    let topo = pilha.pop();
+    println!("Topo da pilha: {:?}",topo);
+    println!("Pilha após remoção: {:?}",pilha);
+    
+    pilha.push("Ana");
+    pilha.push("Lucas");
+    
+    println!("Pilha após mais inserções: {:?}",pilha);
+    
+    let topo_2 = pilha.pop();
+    
+    println!("Novo topo da pilha: {:?}",topo_2);
+    println!("Pilha final: {:?}",pilha);
+}
